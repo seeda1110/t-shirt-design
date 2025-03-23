@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <title>正装のTシャツだよ</title>
+  <meta name="description" content="正装のTシャツだよ">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- [if lt IE 9] -->
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+  <!-- [endif] -->
+</head>
+
+<body>
+  <!-- <header></header> -->
+
+  <main>
+    <div class="Tshirt">
+      <div class="Tshirt__shape"></div>
+    </div>
+    <div class="Award">
+      <p class="Award__txt">BEST DRESSER</p>
+    </div>
+  </main>
+
+  <!-- <footer></footer> -->
+</body>
+
+<style>
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box
+  }
+
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none
+  }
+
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  figure,
+  blockquote,
+  dl,
+  dd {
+    margin: 0
+  }
+
+  ul[role='list'],
+  ol[role='list'] {
+    list-style: none
+  }
+
+  body {
+    min-height: 100vh;
+    line-height: 1.5
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  button,
+  input,
+  label {
+    line-height: 1.1
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance
+  }
+
+  a:not([class]) {
+    text-decoration-skip-ink: auto;
+    color: currentColor
+  }
+
+  img,
+  picture {
+    max-width: 100%;
+    display: block
+  }
+
+  input,
+  button,
+  textarea,
+  select {
+    font: inherit
+  }
+
+  textarea:not([rows]) {
+    min-height: 10em
+  }
+
+  :target {
+    scroll-margin-block: 5ex
+  }
+
+  body {
+    background: #000;
+  }
+
+  .Tshirt {
+    position: relative;
+    text-align: center;
+    background: #fff;
+    width: 200px;
+    height: 250px;
+    margin: 50px auto 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  .Tshirt::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 70px;
+    aspect-ratio: 1/2;
+    clip-path: polygon(0 50%, 100% 100%, 100% 0);
+    background: linear-gradient(45deg, #fff, #fff);
+    left: -70px;
+  }
+
+  .Tshirt::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 70px;
+    aspect-ratio: 1/2;
+    clip-path: polygon(100% 50%, 0 100%, 0 0);
+    background: linear-gradient(45deg, #fff, #fff);
+    right: -70px;
+    top: 0;
+  }
+
+  .Tshirt__shape {
+    position: relative;
+    background: #000;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    top: -60px;
+  }
+
+  .Tshirt__shape::before {
+    position: absolute;
+    content: "";
+    background-image: url(yagirobo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    top: 120px;
+    right: -20px;
+  }
+
+  .Tshirt__shape::after{
+    position: absolute;
+    content: "";
+    
+  }
+
+  .Award {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 45px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 030px auto;
+  }
+
+  .Award::before {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: -10px;
+    left: 30px;
+    z-index: -2;
+    border: 20px solid #dbb00b;
+    border-left-color: transparent;
+  }
+
+  .Award::after {
+    content: '';
+    position: absolute;
+    width: 10px;
+    bottom: -10px;
+    right: 30px;
+    z-index: -2;
+    border: 20px solid #dbb00b;
+    border-right-color: transparent;
+  }
+
+  .Award__txt {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0 20px;
+    line-height: 45px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FFF;
+    background: #e6b422;
+  }
+
+  .Award__txt::before {
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-right: solid 15px #bc7f04;
+  }
+
+  .Award__txt::after {
+    position: absolute;
+    content: '';
+    top: 100%;
+    right: 0;
+    border: none;
+    border-bottom: solid 10px transparent;
+    border-left: solid 15px #bc7f04;
+  }
+</style>
+
+</html>
